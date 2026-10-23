@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gujs demo</title>
+    <style>
+      body { font-family: Georgia, serif; max-width: 680px; margin: 40px auto; padding: 0 16px; color: #2b2522; background: #fbf7f1; line-height: 1.5; }
+      .recipe-title { margin-bottom: 0; }
+      .meta { color: #8a7f76; margin-top: 4px; }
+      .ingredient { margin: 2px 0; }
+      kbd { border: 1px solid #c9bfb4; border-radius: 3px; padding: 0 4px; font-family: inherit; }
+      .hint { font-family: system-ui, sans-serif; font-size: 14px; color: #6d625a; }
+    </style>
+  </head>
+  <body>
+    <p class="hint">Open the scaler with the launcher button (top right) or <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd>.</p>
+    <article id="recipe" data-servings="4">
+      <h1 class="recipe-title">Shakshuka</h1>
+      <p class="meta">Serves 4 · 35 minutes</p>
+      <h2>Ingredients</h2>
+      <ul>
+        <li class="ingredient" data-amount="30" data-unit="ml" data-name="olive oil">30 ml olive oil</li>
+        <li class="ingredient" data-amount="1" data-unit="" data-name="yellow onion, diced">1 yellow onion, diced</li>
+        <li class="ingredient" data-amount="2" data-unit="" data-name="red bell peppers, sliced">2 red bell peppers, sliced</li>
+        <li class="ingredient" data-amount="3" data-unit="" data-name="garlic cloves, minced">3 garlic cloves, minced</li>
+        <li class="ingredient" data-amount="1" data-unit="tsp" data-name="ground cumin">1 tsp ground cumin</li>
+        <li class="ingredient" data-amount="2" data-unit="tsp" data-name="smoked paprika">2 tsp smoked paprika</li>
+        <li class="ingredient" data-amount="800" data-unit="g" data-name="crushed tomatoes">800 g crushed tomatoes</li>
+        <li class="ingredient" data-amount="6" data-unit="" data-name="eggs">6 eggs</li>
+        <li class="ingredient" data-amount="100" data-unit="g" data-name="feta, crumbled">100 g feta, crumbled</li>
+        <li class="ingredient" data-amount="15" data-unit="g" data-name="fresh coriander">15 g fresh coriander</li>
+      </ul>
+      <h2>Steps</h2>
+      <ol>
+        <li class="step">Heat the oil in a wide pan and soften the onion and peppers for 8 minutes.</li>
+        <li class="step">Add the garlic, cumin and paprika and cook for 1 minute.</li>
+        <li class="step">Pour in the tomatoes and simmer for 10 minutes until thick.</li>
+        <li class="step">Make wells in the sauce, crack in the eggs, cover and cook for 6 minutes.</li>
+        <li class="step">Top with feta and coriander and serve from the pan.</li>
+      </ol>
+    </article>
+    <script src="demo.js"></script>
+  </body>
+</html>

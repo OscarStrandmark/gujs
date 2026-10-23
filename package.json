@@ -1,0 +1,40 @@
+{
+  "name": "gujs",
+  "version": "0.1.0",
+  "description": "Framework-free, shadow-DOM overlay window toolkit in the style of an ImGui debug panel.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "bundle": "esbuild src/index.ts --bundle --format=iife --global-name=Gujs --outfile=dist/gujs.global.js",
+    "watch": "tsc -p tsconfig.json --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "demo": "esbuild examples/demo.ts --bundle --outfile=examples/demo.js --serve=127.0.0.1:8000 --servedir=examples"
+  },
+  "keywords": [
+    "overlay",
+    "userscript",
+    "shadow-dom",
+    "imgui",
+    "widget"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "~5.9.2"
+  }
+}
